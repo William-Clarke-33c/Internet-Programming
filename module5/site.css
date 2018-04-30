@@ -1,0 +1,356 @@
+div.main_header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.main_header {
+	color: #ffffff;
+	font-size: 250%;
+}
+
+span.body_text {
+	font-size: 150%;
+}
+
+/* Personal Section */
+
+#about {
+ color: blue;   
+}
+#hobbies {
+ color: crimson;   
+}
+#education {
+ color: limegreen; 
+}
+#hsd {
+    font-style:italic;
+}
+#bos {
+    font-weight: bold;
+}
+#personal a:hover {
+    font-size: 150%;
+}
+
+/* Schedule Section */
+
+table, tr, th, td {
+    text-align: center;
+}
+#schedule tr:nth-child(odd){
+    background-color: azure;
+}
+
+#class-schedule{
+    color:cornflowerblue;
+}
+
+ol li {
+    list-style-type: arabic;
+}
+
+ul li {
+    list-style-type: upper-alpha !important;
+}
+
+/* Create Account Section */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: green;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+ 	top: 15px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.container-check{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-check input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-check .checkmark:after {
+    left: 2px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* *****************************
+        MODULE 2 CSS CODE 
+   ***************************** */
+
+/* Payment Header*/
+#payment-info-head {
+    color:darkturquoise
+}
+
+/* Payment Radio Buttons */
+.payment {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.payment input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.payment-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 100%;
+}
+.payment input:checked ~ .payment-check {
+    background-color: green;
+}
+
+/* Hiding and Show Elements */
+
+.hide {
+    display: none;
+}
+
+label{
+    text-align: right;
+    width: 150px;
+}
+
+input, select{
+    margin-left: 10px;
+    min-width: 10px;
+    box-sizing: content-box;
+}
+
+.payment-container{
+    width: 100px;
+}
+
+.i-button{
+    cursor: pointer;
+}
+
+/* *****************************
+        MODULE 3 CSS CODE 
+   ***************************** */
+
+/* Calculator Header*/
+#stat-calc {
+    color:darkmagenta
+}
+
+font[class= "userInputColor"] {
+    color:skyblue;
+}
+
+#background-color {
+    background-color: azure;
+}
+
+
+input[class="stat-calc-input"], select {
+    width: 15%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+/* *****************************
+        MODULE 4 CSS CODE 
+   ***************************** */
+
+#movie-title {
+    color: deepskyblue;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+#movie-color {
+    background-color: aliceblue;
+}
+
+#login-direct {
+    color:deepskyblue;
+    font-size: 15px;
+}
+
+.error {
+    color: red;
+}
+
+#movieLogout {
+    cursor:pointer;
+    color:blue;
+    text-decoration:underline;
+}
+
+/* *****************************
+        MODULE 5 CSS CODE
+   ***************************** */
+
+.accountContainer {
+    width: 500px;
+    clear: both;
+}
+
+.accountContainer input{
+    width: 100%;
+    clear: both;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+

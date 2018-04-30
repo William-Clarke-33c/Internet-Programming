@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> Payment Information </title>
+        <link rel="stylesheet" type="text/css" href="../css/site.css">
+    </head>
+        <body>
+            <h2 id="payment-info-head"> Enter Payment Information </h2>
+                <form onSubmit="return validateForm();">
+    <label class="payment">
+        <img src="images/Visa.png" style="width:50px;height:50px;">
+        <img src="images/AmEx.png" style="width:50px;height:50px;">
+        <img src="images/MasterCard.png" style="width:50px;height:50px;">
+        <img src="images/Discover.png" style="width:50px;height:50px;">
+        <input type="radio" id="ccradio" onclick="updateForm(1);" checked="checked" name="payment">
+        <span class="payment-check"></span>
+    </label>
+    <label class="payment">
+        <img src="images/PayPal.png" style="width:40x;height:30px;">
+        <input type="radio" id="ppradio" onclick="updateForm(2);" name="payment">
+        <span class="payment-check"></span>
+    </label>
+
+    <div class="payment-container">
+        <label name="credit-option">First Name:
+            <input type="text" name="firstname">
+        </label>
+        
+        <label name="credit-option">Last Name:
+            <input type="text" name="lasttname">
+        </label>
+        
+        <label name="credit-option">Card Number:
+            <input type="text" id="ccnum" name="card_number">
+        </label>
+        
+        <label name="credit-option">Cardholder Name:
+            <input type="text" name="credit_card_name">
+        </label>
+        
+        <label name="credit-option">
+            <a href=https://en.wikipedia.org/wiki/Card_security_code target="_blank">CVC:</a>
+            <input type="text" id="usercvc" name="cvc">
+        </label>
+        
+        <label name="credit-option">Expiration Date:
+            <input type="date" id="expdate" value="2017-12-01" min="2017-01-01" max="2020-12-31">
+        </label>
+        
+        <label name="credit-option"> Address:
+            <input type="text" name="address">
+        </label>
+        
+        <label name="credit-option">City:
+            <input type="text" name="city">
+        </label>
+        
+        <label name="credit-option">Zip:
+            <input type="text" id="userzip" name="zip">
+        </label>
+        
+        <label name="credit-option"> State:
+            <select id="select">
+                <option value="0">Select State</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="connecticut">Connecticut</option>
+                <option value="delaware">Delaware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="idaho">Idaho</option>
+                <option value="illinois">Illinois</option>
+                <option value="indiana">Indiana</option>
+                <option value="iowa">Iowa</option>
+                <option value="kansas">Kansas</option>
+                <option value="kentucky">Kentucky</option>
+                <option value="louisiana">Louisiana</option>
+                <option value="maine">Maine</option>
+                <option value="maryland">Maryland</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="michigan">Michigan</option>
+                <option value="minnesota">Minnesota</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="missouri">Missouri</option>
+                <option value="montana">Montana</option>
+                <option value="nebraska">Nebraska</option>
+                <option value="nevada">Nevada</option>
+                <option value="newhampshire">New Hampshire</option>
+                <option value="newjersey">New Jersey</option>
+                <option value="newmexico">New Mexico</option>
+                <option value="newyork">New York</option>
+                <option value="northcarolina">North Carolina</option>
+                <option value="northdakota">North Dakota</option>
+                <option value="ohio">Ohio</option>
+                <option value="oklahoma">Oklahoma</option>
+                <option value="oregon">Oregon</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="rhodeisland">Rhode Island</option>
+                <option value="southcarolina">South Carolina</option>
+                <option value="southdakota">South Dakota</option>
+                <option value="tennessee">Tennessee</option>
+                <option value="texas">Texas</option>
+                <option value="utah">Utah</option>
+                <option value="vermont">Vermont</option>
+                <option value="virginia">Virginia</option>
+                <option value="washington">Washington</option>
+                <option value="westvirginia">West Virginia</option>
+                <option value="wisconsin">Wisconsin</option>
+                <option value="wyoming">Wyoming</option>
+            </select>
+        </label>
+        
+        <label name="credit-option">Email Address:
+            <input type="text" id="creditemail" name="email"
+                   name="ccemail">
+        </label>
+        
+        <label name="paypal-option" class="hide">PayPal Email:
+            <input type="text" id="payemail" name="ppemail">
+        </label>
+        
+        <label name="paypal-option" class="hide">
+            Password:
+            <input type="password" id="userpsw" name="psw">
+        </label>
+        
+        <input class="i-button" type="image" src="images/PayNow.png" border="0" style="width:100px;height:50px;" alt="Submit">
+        
+    </div>
+</form>
+                <h3><a href="../index.html">ePortfolio</a></h3>
+		<script src="script.js"></script>
+        </body>
+</html>

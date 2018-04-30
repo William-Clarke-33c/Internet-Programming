@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html id= "background-color">
+    <head>
+        <title> Statistical Calculator </title>
+        <link rel="stylesheet" type="text/css" href="../css/site.css">
+    </head>
+    <body>
+        <center>
+        <h2 id="stat-calc"> Statistical Calculator </h2>
+        </center>
+        <form action="#" method="POST" id=statForm onSubmit="return false;">
+            <center>
+            <label name="user-input">
+            <font class=userInputColor>User Input: </font>
+            </label>
+            <input type="text" id="user-input" class="stat-calc-input" name="user-input">
+            <br>
+            <label name="max-result">
+            <font class=userInputColor>Max: </font>
+            </label>
+            <input type="text" name="max" id="max" class="stat-calc-input" readonly>
+            <br>
+            <label name="mean-result">
+            <font class=userInputColor>Mean: </font>
+            </label>
+            <input type="text" name="mean" id="mean" class="stat-calc-input" readonly>
+            <br>
+            <label name="median-result">
+            <font class=userInputColor>Median: </font>
+            </label>
+            <input type="text" name="median" id="median" class="stat-calc-input" readonly>
+            <br>
+            <label name="min-result">
+            <font class=userInputColor>Min: </font>
+            </label>
+            <input type="text" name="min" id="min" class="stat-calc-input" readonly>
+            <br>
+            <label name="mode-result">
+            <font class=userInputColor>Mode: </font>
+            </label>
+            <input type="text" name="mode" id="mode" class="stat-calc-input" readonly>
+            <br>
+            <label name="std-dev-result">
+            <font class=userInputColor>Std Dev: </font>
+            </label>
+            <input type="text" name="std-dev" id="stdDev" class="stat-calc-input" readonly>
+            <br>
+            <label name="sum-result">
+            <font class=userInputColor>Sum: </font>
+            </label>
+            <input type="text" name="sum" id="sum" class="stat-calc-input" readonly>
+            <br>
+            <label name="variance-result">
+            <font class=userInputColor>Variance: </font>
+            </label>
+            <input type="text" name="variance" id="variance" class="stat-calc-input" readonly>
+            <br>
+            <input type="submit" value="Submit" onclick="performStatistics();" />
+            <button type="reset"  value="Reset">Reset</button>
+            </center>
+        </form>
+        <h3><a href="../index.html">ePortfolio</a></h3>
+        <script src="script.js"></script>
+    </body>
+</html>
